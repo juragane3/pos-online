@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'pos_core.wsgi.application'
      #   'NAME': BASE_DIR / 'db.sqlite3',
   #  }
 #}
-
+print("MEMERIKSA DATABASE_URL:", env('DATABASE_URL', default='TIDAK DITEMUKAN'))
 DATABASES = {
     'default': dj_database_url.config(conn_max_age=600)
 }
